@@ -37,7 +37,9 @@ Route::get('login/{provider}/callback/', 'Auth\LoginController@Callback')->name(
 //Route::middleware([\App\Http\Middleware\setLang::class])->prefix('{language}')->group(function () {
 //
 //});
-
+Route::get('/', function () {
+    return redirect('/' . app()->getLocale() . '/home');
+});
 Route::group(['prefix' => '{language}', 'middleware' => [\App\Http\Middleware\setLang::class]], function () {
     Route::get('/home', function () {
         $featured = Product::where('status', 'active')->where('is_featured', 1)->orderBy('price', 'DESC')->limit(2)->get();

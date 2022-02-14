@@ -286,7 +286,7 @@
                             @endphp
                             <div class="bg-gray-200  h-72 rounded-lg shadow-xl  relative">
                                 <img class="max-w-full w-full h-full object-cover" src="{{$photo[0]}}" alt="">
-                                <div class="w-full absolute top-1/3 left-10">
+                                <div class="w-full absolute top-1/3 left-10 rtl:hidden ">
                                     <h1 class="font-bold text-lg py-2">{{$product->title}}</h1>
                                     <h1 class="font-bold text-lg py-2 text-yellow-600">UP TO <span class="text-black">{{$product->discount}}%</span>
                                     </h1>

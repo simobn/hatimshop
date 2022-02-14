@@ -50,7 +50,7 @@
                     To: "translate-x-full"
                 -->
                 <div
-                    class="ml-auto relative max-w-xs w-full h-full bg-white shadow-xl py-4 pb-12 flex flex-col overflow-y-auto ">
+                        class="ml-auto relative max-w-xs w-full h-full bg-white shadow-xl py-4 pb-12 flex flex-col overflow-y-auto ">
                     <div class="px-4 flex items-center justify-between">
                         <h2 class="text-lg font-medium text-gray-900">Filters</h2>
                         <button type="button" id="close_menu"
@@ -426,19 +426,19 @@
                                                 // dd($max);
                                             @endphp
                                             <input
-                                                type="range"
-                                                name="price"
-                                                class="form-range
+                                                    type="range"
+                                                    name="price"
+                                                    class="form-range
                                                   appearance-none
                                                   w-full
                                                   h-1
                                                   p-0
                                                   bg-gray-500
                                                   focus:outline-none focus:ring-0 focus:shadow-none"
-                                                id="price_range"
-                                                min="0"
-                                                max="{{$max}}"
-                                                value="{{$max}}"
+                                                    id="price_range"
+                                                    min="0"
+                                                    max="{{$max}}"
+                                                    value="{{$max}}"
                                             />
                                             <input type="hidden" name="category" id="cat">
                                         </div>
@@ -455,7 +455,7 @@
                                 <div class="w-full px-5 py-5 grid grid-cols-1 md:grid-cols-3 sm:gap-8 md:gap-4 ">
                                     @forelse($products as $product)
                                         <div
-                                            class="w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-xl sm:mx-auto">
+                                                class="w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-xl sm:mx-auto">
                                             <a href="{{route('product-detail',[app()->getLocale(),$product->slug])}}">
                                                 @php
                                                     $photo=explode(',',$product->photo);

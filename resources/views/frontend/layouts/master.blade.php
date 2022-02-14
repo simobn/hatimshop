@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="{{app()->getLocale()}}">
 <head>
     @include('frontend.layouts.head')
     @yield('extra-styles')
 </head>
-<body class="js">
+<body class="js" dir="rtl">
 
 <!-- Preloader -->
 <div class="preloader">
