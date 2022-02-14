@@ -1,7 +1,7 @@
 <!-- Start Shop Newsletter  -->
 <div class="p-6 container md:w-2/3 xl:w-auto mx-auto flex flex-col xl:items-stretch justify-between xl:flex-row">
     <div class="xl:w-1/2 md:mb-14 xl:mb-0 relative h-auto flex items-center justify-center">
-        <img src="https://cdn.tuk.dev/assets/components/26May-update/newsletter-1.png"
+        <img src="{{asset('images/newsletter.png')}}"
              alt="Envelope with a newsletter" role="img" class="h-full xl:w-full lg:w-1/2 w-full"/>
     </div>
     <div class="w-full xl:w-1/2 xl:pl-40 xl:py-28">
