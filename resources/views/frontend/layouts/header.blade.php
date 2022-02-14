@@ -1,6 +1,6 @@
 <header class="relative bg-white">
 
-    <div class="max-w-full mx-auto  bg-indigo-900 align-items-center">
+    <div class="max-w-full mx-auto  align-items-center" style="background-color: #Ff5641">
         <div class="md:flex">
             <div class="md:shrink-0 sm:w-full md-w-1/2 text-center justify-center py-2 md:py-5">
                 <ul class="flex flex-row justify-center text-white">
